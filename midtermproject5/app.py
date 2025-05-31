@@ -199,10 +199,5 @@ Fast food preferences vary by region, which can influence local advertising stra
 Brand distribution chart for California and Texas.
 """
 
-import os
-
-dataset_folder = '/root/.cache/kagglehub/datasets/imtkaggleteam/fast-food-restaurants-across-america/versions/1'
-print(os.listdir(dataset_folder))
-
 
 
