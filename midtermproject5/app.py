@@ -31,10 +31,9 @@ import pandas as pd
 df = pd.read_csv('FastFoodRestaurants.csv')
 df.columns = df.columns.str.strip()
 
-
 # Load the dataset
-df = pd.read_csv(output)
-df.columns = df.columns.str.strip()
+# df = pd.read_csv(output)
+# df.columns = df.columns.str.strip()
 
 # Preview
 df.head()
