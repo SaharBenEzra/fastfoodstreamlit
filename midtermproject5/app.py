@@ -2,6 +2,13 @@ import streamlit as st
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
+import os
+
+# Debug file path
+st.write("Current directory:", os.getcwd())
+if not os.path.exists("FastFoodRestaurants.csv"):
+    st.error("FastFoodRestaurants.csv not found!")
+    st.stop()
 
 # Load data
 df = pd.read_csv("FastFoodRestaurants.csv")
