@@ -28,7 +28,7 @@ path = 'FastFoodRestaurants.csv'
 
 import pandas as pd
 
-df = pd.read_csv('FastFoodRestaurants.csv')
+df = pd.read_csv('midtermproject5/FastFoodRestaurants.csv')
 df.columns = df.columns.str.strip()
 
 # Load the dataset
