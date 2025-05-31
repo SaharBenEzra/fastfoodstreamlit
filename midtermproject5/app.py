@@ -6,12 +6,12 @@ import os
 
 # Debug file path
 st.write("Current directory:", os.getcwd())
-if not os.path.exists("FastFoodRestaurants.csv"):
-    st.error("FastFoodRestaurants.csv not found!")
+if not os.path.exists("midtermproject5/FastFoodRestaurants.csv"):
+    st.error("FastFoodRestaurants.csv not found in 'midtermproject5/' directory!")
     st.stop()
 
 # Load data
-df = pd.read_csv("FastFoodRestaurants.csv")
+df = pd.read_csv("midtermproject5/FastFoodRestaurants.csv")
 df.columns = df.columns.str.strip()
 
 # Title and intro
