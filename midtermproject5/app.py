@@ -26,17 +26,11 @@ path = 'FastFoodRestaurants.csv'
 # dataset_folder = '/root/.cache/kagglehub/datasets/imtkaggleteam/fast-food-restaurants-across-america/versions/1'
 # print(os.listdir(dataset_folder))
 
-# Import libraries
 import pandas as pd
-import gdown
 
-# Define the Google Drive file ID
-file_id = '1xb8r29HuEUgSF6E1xr2UYECl4Nxse5hL'
-url = f'https://drive.google.com/uc?id={file_id}'
+df = pd.read_csv('FastFoodRestaurants.csv')
+df.columns = df.columns.str.strip()
 
-# Download the file
-output = 'FastFoodRestaurants.csv'
-gdown.download(url, output, quiet=False)
 
 # Load the dataset
 df = pd.read_csv(output)
